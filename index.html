@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Walid Voyages Motion</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+  <header class="topbar">
+    <div class="logo">Walid <span>Voyages</span></div>
+    <nav class="menu"><span>Accueil</span><span>Hôtels</span><span>Omra</span><span>Voyages</span><span>Vols</span></nav>
+    <div class="call">73 201 660</div>
+  </header>
+
+  <div class="stage-wrap">
+    <main class="stage" id="stage">
+      <div class="progress" id="progress"></div>
+      <div class="controls">
+        <button class="ctrl" id="restart">↻ Rejouer</button>
+        <button class="ctrl" id="pause">Pause</button>
+      </div>
+
+      <section class="scene sky active">
+        <div class="cloud c1"></div><div class="cloud c2"></div>
+        <img class="real-plane" src="images/plane.svg" alt="Avion">
+        <div class="intro-text">
+          <span class="badge">Walid Voyages</span>
+          <h1 class="huge">سفرتك تبدأ<br><span class="green-pill">بأحسن سوم</span></h1>
+          <p class="sub">Vols • Hôtels • Omra • Voyages organisés</p>
+        </div>
+        <div class="intro-card glass">
+          <img src="images/walid-home.png" alt="">
+        </div>
+        <div class="float-icons">
+          <div class="fi">🏨</div><div class="fi">✈</div><div class="fi">🕋</div>
+        </div>
+      </section>
+
+      <section class="scene people-scene">
+        <div class="people-title">
+          <span class="badge">شنوّة تحب تعمل اليوم؟</span>
+          <h2 class="huge blue-title">تلوّج على Hotel؟</h2>
+        </div>
+        <div class="search-float">
+          <div class="icon">⌕</div>
+          <div class="search-input"><span id="peopleType"></span><span class="caret">|</span></div>
+          <div class="search-go">إبحث</div>
+        </div>
+        <div class="cursor">➤</div>
+        <div class="people-row">
+          <div class="person"><div class="avatar">👩‍🦱</div><div class="bubble">نحب Hotel في Hammamet</div></div>
+          <div class="person"><div class="avatar">👨‍👩‍👧</div><div class="bubble">نحب séjour للعائلة</div></div>
+          <div class="person"><div class="avatar">🧳</div><div class="bubble">نحب meilleur prix</div></div>
+        </div>
+      </section>
+
+      <section class="scene hotel-scene">
+        <div class="search-panel glass">
+          <div class="typebar">
+            <div class="type-icon">🏨</div>
+            <div class="type-text" id="hotelType"></div>
+            <div class="search-btn">إبحث عن Hotel</div>
+          </div>
+          <div class="fake-browser">
+            <div class="fake-top"><i></i><i></i><i></i></div>
+            <img class="hotel-shot" src="images/walid-hotels.png" alt="">
+          </div>
+        </div>
+      </section>
+
+      <section class="scene site-scene">
+        <div class="site-title">
+          <span class="badge">الموقع الرسمي</span>
+          <h2>كل شيء قدّامك… ويتبدّل Live</h2>
+        </div>
+        <div class="slider">
+          <div class="slide show"><img src="images/walid-home.png"></div>
+          <div class="slide"><img src="images/walid-hotels.png"></div>
+          <div class="slide"><img src="images/walid-flights.png"></div>
+          <div class="phone-frame"><img src="images/walid-hotels.png"></div>
+        </div>
+      </section>
+
+      <section class="scene flight-scene">
+        <div class="flight-wrap">
+          <div class="flight-copy">
+            <span class="badge">Vols</span>
+            <img class="mini-real-plane" src="images/plane.svg" alt="">
+            <h2 class="huge blue-title small-title">ولا عمّر Vol<br><span class="green-pill">في ثواني</span></h2>
+            <p class="sub">منين؟ لوين؟ التاريخ؟ عدد المسافرين؟</p>
+          </div>
+          <div class="flight-form">
+            <div class="field-row">
+              <div class="field"><small>من</small><b id="fromField"></b></div>
+              <div class="field"><small>إلى</small><b id="toField"></b></div>
+            </div>
+            <div class="field-row">
+              <div class="field"><small>تاريخ الذهاب</small><b id="dateField"></b></div>
+              <div class="field"><small>المسافرون</small><b id="travField"></b></div>
+            </div>
+            <div class="flight-search">⌕ Recherche</div>
+            <div class="fake-browser short-browser">
+              <img src="images/walid-flights.png">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene final-scene">
+        <div class="final-center">
+          <span class="badge">Walid Voyages</span>
+          <h2 class="huge">أرخص سوم<br><span class="green-pill">في تونس</span></h2>
+          <p class="sub final-sub">للسفر والفنادق — احجز مباشرة من الموقع، وخلّي الباقي علينا.</p>
+          <div class="cta">
+            <a class="primary" href="https://www.walid-voyages.com" target="_blank">www.walid-voyages.com</a>
+            <span>58 150 699</span><span>73 201 660</span>
+          </div>
+        </div>
+      </section>
+
+      <div class="dots" id="dots"></div>
+    </main>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
